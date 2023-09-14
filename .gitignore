@@ -1,0 +1,8 @@
+.DS_Store
+cypress.env.json
+node_modules/
+temp/
+allure-report
+allure-results
+videos
+screenshots

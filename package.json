@@ -1,0 +1,42 @@
+{
+  "name": "exercicios_ebac_modulo_11",
+  "version": "1.0.0",
+  "description": "Automação UI com cypress",
+  "main": "index.js",
+  "scripts": {
+    "docker:start": "docker run -p 3000:3000 paulogoncalvesbh/serverest:latest",
+    "cy:open": "npx cypress open ",
+    "cy:reportTesults": "node runner.js",
+    "cy:dashCypressClound": "npx cypress run --record --key ad7e7e2c-7f7c-48f1-8f1c-8c8098294edc",
+    "cy:[01]reportAllure": "npx cypress run --config video=false --env allure=true --browser edge",
+    "cy:[02]allureGenerete": "allure generate allure-results",
+    "cy:[03]allureOpen": "allure open allure-report",
+    "eslint:fix": "eslint --fix \"cypress/**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barbaradrumond/Cypressio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barbaradrumond/Cypressio/issues"
+  },
+  "homepage": "https://github.com/barbaradrumond/Exercicios_#readme",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.28.0",
+    "cypress": "^12.17.4",
+    "faker-br": "^0.4.1",
+    "leite": "^0.2.0"
+  },
+  "dependencies": {
+    "chance": "^1.1.11",
+    "cypress-multi-reporters": "^1.6.3",
+    "cypress-plugin-steps": "^1.0.4",
+    "cypress-tesults-reporter": "^1.2.0",
+    "editorconfig": "^1.0.1",
+    "joi": "^17.10.1",
+    "webpack": "^5.88.2"
+  }
+}
